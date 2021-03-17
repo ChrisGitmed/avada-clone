@@ -8,11 +8,22 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
-    padding: 1rem 1.5rem;
     font-size: 1.3rem;
+}
+
+nav {
+  border-bottom: 1px solid #dadada;
+  padding: 1rem 1.5rem;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
 
 header > div {
@@ -29,4 +40,13 @@ header > div {
   cursor: pointer;
   color: #333;
   transition: 0.2s;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
