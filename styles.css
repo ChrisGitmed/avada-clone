@@ -67,7 +67,8 @@ header > div {
   transition: 0.2s;
 }
 
-.about-menu {
+.about-menu,
+.investors-menu {
   width: 100%;
 }
 
