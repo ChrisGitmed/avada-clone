@@ -12,4 +12,21 @@ header {
     align-items: center;
     border: 1px solid black;
     padding: 1rem 1.5rem;
+    font-size: 1.3rem;
+}
+
+header > div {
+  display: flex;
+}
+
+.header-icons > span {
+  margin-left: 1rem;
+  color: #dadada;
+  transition: 0.2s;
+}
+
+.header-icons > span:hover {
+  cursor: pointer;
+  color: #333;
+  transition: 0.2s;
 }
