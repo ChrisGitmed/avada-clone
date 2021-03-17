@@ -1,9 +1,15 @@
-.hidden {
-  display: none !important;
+.hidden-menu {
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 0.75s 0ms;
+}
+
+.hidden-menu.active {
+  max-height: 100vh;
 }
 
 html {
-  box-sizing: border-box;  
+  box-sizing: border-box;
 }
 
 body {
@@ -57,14 +63,14 @@ header > div {
   padding: .85rem 1.7rem;
   border-bottom: 1px solid #dadada;
   background-color: #f9f9f9;
-  transition: 0.2s;
+  transition: background-color .2s;
 }
 
 .header-list > li:hover,
 .header-list > ul > li:hover {
   cursor: pointer;
   background-color: #dadada;
-  transition: 0.2s;
+  transition: background-color .2s;
 }
 
 .about-menu,
