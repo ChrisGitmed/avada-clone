@@ -1,3 +1,7 @@
+.hidden {
+  display: none !important;
+}
+
 html {
   box-sizing: border-box;  
 }
@@ -8,6 +12,71 @@ body {
 
 header {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
-    border: 1px solid black;
+    align-items: center;
+    font-size: 1.3rem;
+}
+
+nav {
+  border-bottom: 1px solid #dadada;
+  padding: 1rem 1.7rem;
+  align-items: center;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+header > div {
+  display: flex;
+}
+
+.header-icons > span {
+  margin-left: 0.75rem;
+  color: #dadada;
+  transition: 0.2s;
+}
+
+.header-icons > span:hover {
+  cursor: pointer;
+  color: #333;
+  transition: 0.2s;
+}
+
+.header-list {
+  font-size: 1rem;
+  flex-wrap: wrap
+}
+
+.header-list > li,
+.header-list > ul > li{
+  width: 100%;
+  padding: .85rem 1.7rem;
+  border-bottom: 1px solid #dadada;
+  background-color: #f9f9f9;
+  transition: 0.2s;
+}
+
+.header-list > li:hover,
+.header-list > ul > li:hover {
+  cursor: pointer;
+  background-color: #dadada;
+  transition: 0.2s;
+}
+
+.about-menu,
+.investors-menu {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  width: 100%;
+}
+
+.justify-between {
+  justify-content: space-between;
 }
