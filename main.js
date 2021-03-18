@@ -7,9 +7,6 @@ const $investorsMenu = document.querySelector('.investors-menu');
 
 $menuIcon.addEventListener('click', () => {
     $navList.classList.toggle('active')
-    const height = $navList.offsetHeight;
-    console.log('height: ', height);
-
 });
 
 $aboutIcon.addEventListener('click', () => {

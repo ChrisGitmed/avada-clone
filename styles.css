@@ -1,11 +1,19 @@
 .hidden-menu {
   max-height: 0px;
   overflow: hidden;
-  transition: max-height 0.75s 0ms;
+  transition: max-height 0.5s 0ms;
 }
 
 .hidden-menu.active {
-  max-height: 100vh;
+  max-height: 650px;
+}
+
+.about-menu.active {
+  max-height: 240px;
+}
+
+.investors-menu.active {
+  max-height: 60px;
 }
 
 html {
